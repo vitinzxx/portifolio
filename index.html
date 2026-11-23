@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio</title>
+  <meta name="description" content="Portfólio de estudante de Desenvolvimento de Sistemas no SENAI e futuro profissional de Educação Física.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="topo">
+    <div class="container topo__linha">
+      <a class="marca" href="#inicio" aria-label="Início">
+        <span class="marca__numero" data-iniciais>SN</span>
+      </a>
+
+      <nav id="menu" class="menu" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#educacao-fisica">Educação Física</a>
+        <a href="#treino">Treino</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="topo__acoes">
+        <button class="botao-icone" id="tema" type="button" aria-label="Alternar entre tema claro e escuro">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+          </svg>
+        </button>
+        <button class="botao-icone botao-menu" id="abrir-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ INÍCIO ============ -->
+    <section class="hero" id="inicio">
+      <!-- Marcações de um campo, só decoração -->
+      <svg class="hero__campo" viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g fill="none" stroke="#fff" stroke-width="3">
+          <rect x="30" y="30" width="940" height="500"/>
+          <line x1="500" y1="30" x2="500" y2="530"/>
+          <circle cx="500" cy="280" r="70"/>
+          <rect x="30" y="170" width="190" height="220"/>
+          <rect x="780" y="170" width="190" height="220"/>
+          <rect x="30" y="225" width="75" height="110"/>
+          <rect x="895" y="225" width="75" height="110"/>
+          <path d="M220 200 A90 90 0 0 1 220 360"/>
+          <path d="M780 200 A90 90 0 0 0 780 360"/>
+        </g>
+      </svg>
+
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <p class="hero__ola">Olá, eu sou <span data-nome>Vitor</span></p>
+          <h1>Do código<br>ao campo.</h1>
+          <p class="hero__sub">
+            Tenho <span data-idade>18</span> anos, estudo Desenvolvimento de Sistemas no SENAI e quero seguir na Educação Física.
+            Aqui você vê por onde eu passei, o que já sei fazer e para onde vou.
+          </p>
+          <div class="hero__botoes">
+            <a class="botao botao--amarelo" href="#trajetoria">Ver minha trajetória</a>
+            <a class="botao botao--contorno" href="#contato">Falar comigo</a>
+          </div>
+        </div>
+
+        <div class="placar" role="group" aria-label="Onde estou e para onde vou">
+          <div class="placar__lado">
+            <span class="placar__rotulo">Agora</span>
+            <strong class="placar__grande">SENAI</strong>
+            <span class="placar__legenda">Técnico em Desenvolvimento de Sistemas</span>
+          </div>
+          <div class="placar__lado placar__lado--proximo">
+            <span class="placar__rotulo">Próximo</span>
+            <strong class="placar__grande">Educação<br>Física</strong>
+            <span class="placar__legenda">Faculdade</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Batimento cardíaco desenhado com SVG -->
+      <svg class="pulso" viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true">
+        <path class="pulso__base" pathLength="1" d="M0 40 H120 L140 40 L155 8 L175 72 L195 24 L210 40 H330 L350 40 L365 8 L385 72 L405 24 L420 40 H600"/>
+        <path class="pulso__vivo" pathLength="1" d="M0 40 H120 L140 40 L155 8 L175 72 L195 24 L210 40 H330 L350 40 L365 8 L385 72 L405 24 L420 40 H600"/>
+      </svg>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="secao" id="sobre">
+      <div class="container sobre">
+        <div class="foto">
+          <!-- Coloque sua foto na pasta "fotos" com o nome perfil.jpg -->
+          <span class="foto__iniciais" data-iniciais>SN</span>
+          <img src="fotos/perfil.jpg" alt="Foto de perfil" onerror="this.remove()">
+        </div>
+
+        <div class="sobre__texto">
+          <h2>Quem sou eu</h2>
+          <p>
+            Meu nome é <strong data-nome>Vitor</strong> e tenho <strong><span data-idade>18</span> anos</strong>.
+            Faço o curso técnico em Desenvolvimento de Sistemas no SENAI e pretendo cursar Educação Física no próximo ano.
+          </p>
+          <p>
+            Aos 18, as escolhas importantes começam a aparecer. Eu escolhi dois caminhos que parecem
+            diferentes, mas se parecem muito: programar e treinar. Nos dois, ninguém evolui de uma vez.
+            Evolui quem repete, erra, ajusta e continua.
+          </p>
+          <p>
+            No SENAI aprendo a transformar ideias em sistemas que funcionam. Na Educação Física quero fazer
+            algo parecido com o corpo e com a saúde das pessoas: planejar, acompanhar e ver o resultado aparecer.
+          </p>
+          <p>
+            Gosto muito de esportes, tanto de praticar quanto de acompanhar competições. No meu tempo livre, gosto de jogar, assistir a vídeos, ouvir música e passar momentos com amigos e familiares. Também gosto de aprender coisas novas, principalmente relacionadas à tecnologia. Minhas inspirações vêm das pessoas que estão ao meu redor, que me motivam a buscar meus objetivos, superar desafios e nunca desistir dos meus sonhos.
+          </p>
+
+          <dl class="ficha">
+            <div>
+              <dt>Idade</dt>
+              <dd><span data-idade>18</span> anos</dd>
+            </div>
+            <div>
+              <dt>Curso técnico</dt>
+              <dd>Desenvolvimento de Sistemas, SENAI</dd>
+            </div>
+            <div>
+              <dt>Objetivo</dt>
+              <dd>Faculdade de Educação Física</dd>
+            </div>
+            <div>
+              <dt>Esporte favorito</dt>
+              <dd>Futebol</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAJETÓRIA ============ -->
+    <section class="secao secao--faixa" id="trajetoria">
+      <div class="container">
+        <h2>Minha trajetória</h2>
+        <p class="secao__intro">Cada etapa abaixo me trouxe até aqui.</p>
+
+        <ol class="percurso">
+          <li class="etapa">
+            <div class="etapa__cabeca">
+              <h3>Ponto de partida</h3>
+            </div>
+            <p>Minha história começou no SESI, onde tive minhas primeiras experiências escolares e também meu primeiro contato com a tecnologia e os computadores, despertando minha curiosidade pela informática. Já no esporte, meu primeiro contato aconteceu aos 5 anos de idade, desde então, ele passou a fazer parte da minha vida, ensinando valores como disciplina, dedicação, respeito e trabalho em equipe. Essas experiências foram importantes para meu crescimento pessoal e ajudaram a construir quem sou hoje.</p>
+          </li>
+
+          <li class="etapa">
+            <div class="etapa__cabeca">
+              <h3>Técnico em Desenvolvimento de Sistemas, SENAI</h3>
+              <span class="etiqueta">Em andamento</span>
+            </div>
+            <p>
+              No SENAI aprendo lógica de programação e desenvolvimento web.
+              Este portfólio é feito com HTML, CSS e JavaScript.
+            </p>
+          </li>
+
+          <li class="etapa etapa--meta">
+            <div class="etapa__cabeca">
+              <h3>Faculdade de Educação Física</h3>
+              <span class="etiqueta etiqueta--amarelo">Próximo objetivo</span>
+            </div>
+            <p>
+              Quero estudar Educação Física para trabalhar com saúde, esporte e movimento,
+              levando o que aprendi em tecnologia para a prática.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="secao" id="habilidades">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="duas-colunas">
+          <div>
+            <h3>Na tecnologia</h3>
+            <ul class="chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Lógica de programação</li>
+              <li>Flutter</li>
+            </ul>
+          </div>
+          <div>
+            <h3>No esporte e na vida</h3>
+            <ul class="chips chips--amarelo">
+              <li>Trabalho em equipe</li>
+              <li>Disciplina</li>
+              <li>Comunicação</li>
+              <li>Persistência</li>
+              <li>Comprometimento</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCAÇÃO FÍSICA ============ -->
+    <section class="secao secao--faixa" id="educacao-fisica">
+      <div class="container">
+        <h2>Por que Educação Física</h2>
+        <p class="secao__intro">Quatro áreas da profissão que me interessam.</p>
+
+        <div class="areas">
+          <article class="area">
+            <h3>Saúde e qualidade de vida</h3>
+            <p>Atividade física regular previne doenças, melhora o humor e dá mais disposição para o dia a dia. Quero ajudar pessoas a começar e a manter esse hábito.</p>
+          </article>
+          <article class="area">
+            <h3>Esporte escolar</h3>
+            <p>A aula de Educação Física é, para muita gente, o primeiro contato com o esporte. Um bom professor faz esse contato ser positivo.</p>
+          </article>
+          <article class="area">
+            <h3>Treinamento físico</h3>
+            <p>Montar um treino é planejar: objetivo, carga, descanso e evolução. É um trabalho de método, parecido com o de desenvolver um sistema.</p>
+          </article>
+          <article class="area">
+            <h3>Tecnologia no esporte</h3>
+            <p>Relógios de corrida, aplicativos de treino e análise de desempenho já fazem parte do esporte. É aqui que minhas duas áreas se encontram.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TREINO (calculadora) ============ -->
+    <section class="secao" id="treino">
+      <div class="container">
+        <h2>Zonas de treino</h2>
+        <p class="secao__intro">
+          Uma ferramenta que fiz em JavaScript para unir as duas áreas. Digite uma idade e veja as faixas de batimento cardíaco para treinar.
+        </p>
+
+        <div class="calc">
+          <form class="calc__form" id="form-fc" novalidate>
+            <label for="idade">Idade (anos)</label>
+            <input id="idade" name="idade" type="number" inputmode="numeric" min="10" max="100" value="20" required>
+            <button class="botao botao--verde" type="submit">Calcular zonas</button>
+            <p class="calc__erro" id="erro-fc" role="alert" hidden></p>
+
+            <div class="calc__fcmax">
+              <svg class="coracao" id="coracao" viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+              </svg>
+              <div>
+                <span class="calc__fcmax-rotulo">Frequência máxima estimada</span>
+                <strong class="calc__fcmax-valor"><span id="fcmax">200</span> bpm</strong>
+              </div>
+            </div>
+            <p class="calc__nota" id="legenda-fc">Exemplo com 20 anos. Troque pela sua idade.</p>
+          </form>
+
+          <div class="calc__zonas">
+            <ol class="zonas" id="zonas" aria-live="polite"></ol>
+            <p class="calc__nota">
+              Cálculo: 220 menos a idade, uma estimativa muito usada. Ela não substitui a avaliação de um profissional de Educação Física ou de um médico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERIA ============ -->
+    <!-- Crie uma pasta chamada "fotos" ao lado do index.html e coloque nela
+         galeria-1.jpg, galeria-2.jpg ... galeria-6.jpg. Enquanto não houver foto,
+         aparece o desenho. Troque as legendas e o texto "alt" de cada foto. -->
+    <section class="secao secao--faixa" id="galeria">
+      <div class="container">
+        <h2>Galeria</h2>
+        <p class="secao__intro">Treino, estudo e esporte. Clique numa foto para ampliar.</p>
+
+        <div class="galeria">
+          <figure class="galeria__item">
+            <svg class="ilustra" viewBox="0 0 200 150" aria-hidden="true">
+              <circle cx="100" cy="75" r="48"/>
+              <polygon points="100,55 119,69 112,92 88,92 81,69"/>
+              <path d="M100 55V28M119 69L146 60M112 92L128 114M88 92L72 114M81 69L54 60"/>
+            </svg>
+            <img src="esporte.jpg" alt="Eu praticando esporte" loading="lazy" onerror="this.remove()">
+            <figcaption>No esporte</figcaption>
+          </figure>
+
+          <figure class="galeria__item">
+            <svg class="ilustra" viewBox="0 0 200 150" aria-hidden="true">
+              <circle cx="100" cy="82" r="46"/>
+              <path d="M88 22h24M100 22v14M100 82V54M100 82l22 12M140 40l10-10"/>
+            </svg>
+            <img src="treino.jpg" alt="Eu em um treino" loading="lazy" onerror="this.remove()">
+            <figcaption>No treino</figcaption>
+          </figure>
+
+          <figure class="galeria__item">
+            <svg class="ilustra" viewBox="0 0 200 150" aria-hidden="true">
+              <rect x="48" y="52" width="12" height="46" rx="3"/>
+              <rect x="62" y="38" width="14" height="74" rx="3"/>
+              <rect x="124" y="38" width="14" height="74" rx="3"/>
+              <rect x="140" y="52" width="12" height="46" rx="3"/>
+              <path d="M76 75h48M36 75h12M152 75h12"/>
+            </svg>
+            <img src="academia.jpg" alt="Eu na academia" loading="lazy" onerror="this.remove()">
+            <figcaption>Na academia</figcaption>
+          </figure>
+
+          <figure class="galeria__item">
+            <svg class="ilustra" viewBox="0 0 200 150" aria-hidden="true">
+              <rect x="36" y="58" width="60" height="26" rx="6"/>
+              <circle cx="116" cy="86" r="28"/>
+              <path d="M112 58V40a14 14 0 0 1 14-14"/>
+            </svg>
+            <img src="turma.jpg" alt="Eu com a turma" loading="lazy" onerror="this.remove()">
+            <figcaption>Com a turma</figcaption>
+          </figure>
+
+          <figure class="galeria__item">
+            <svg class="ilustra" viewBox="0 0 200 150" aria-hidden="true">
+              <rect x="30" y="40" width="140" height="70" rx="35"/>
+              <rect x="44" y="52" width="112" height="46" rx="23"/>
+              <rect x="58" y="64" width="84" height="22" rx="11"/>
+            </svg>
+            <img src="senai.jpg" alt="Eu no SENAI" loading="lazy" onerror="this.remove()">
+            <figcaption>No SENAI</figcaption>
+          </figure>
+
+          <figure class="galeria__item">
+            <svg class="ilustra" viewBox="0 0 200 150" aria-hidden="true">
+              <path d="M100 118L58 78C40 60 52 34 76 34c12 0 20 8 24 16 4-8 12-16 24-16 24 0 36 26 18 44z"/>
+              <path d="M44 80H80L90 60L104 100L114 74H156"/>
+            </svg>
+            <img src="conquista.jpg" alt="Um momento importante para mim" loading="lazy" onerror="this.remove()">
+            <figcaption>Uma conquista</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <dialog class="ampliar" id="ampliar" aria-label="Foto ampliada">
+        <button class="ampliar__fechar" id="fechar-foto" type="button" aria-label="Fechar foto">&times;</button>
+        <img src="" alt="">
+        <p></p>
+      </dialog>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="secao" id="projetos">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projetos">
+          <article class="projeto">
+            <span class="etiqueta etiqueta--amarelo">Neste site</span>
+            <h3>Calculadora de zonas de treino</h3>
+            <p>Recebe a idade, estima a frequência cardíaca máxima e mostra as cinco zonas de intensidade. Feita com HTML, CSS e JavaScript.</p>
+            <a class="projeto__link" href="#treino">Testar agora</a>
+          </article>
+
+          <article class="projeto">
+            <span class="etiqueta">Em breve</span>
+            <h3>FARMI Gestor – Fazenda Inteligente</h3>
+            <p>Sistema web desenvolvido para facilitar o gerenciamento de propriedades rurais, permitindo acompanhar informações sobre fazendas, culturas, sensores e alertas em um só lugar. Desenvolvido com HTML, CSS, JavaScript, PHP e CodeIgniter.
+
+</p>
+            <a class="projeto__link" href="#" data-link="github">Ver no GitHub</a>
+          </article>
+
+          <article class="projeto">
+            <span class="etiqueta">Em breve</span>
+            <h3>Sistema de Gestão de Treinos</h3>
+            <p>Projeto voltado ao ambiente esportivo, com a proposta de organizar fichas de treino, registrar exercícios, acompanhar o desempenho e monitorar a evolução dos praticantes. Desenvolvido com HTML, CSS e JavaScript.
+</p>
+            <a class="projeto__link" href="#" data-link="github">Ver no GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="secao secao--faixa" id="contato">
+      <div class="container contato">
+        <div>
+          <h2>Vamos conversar</h2>
+          <p class="secao__intro">Escreva uma mensagem ou me encontre nas redes.</p>
+          <ul class="redes">
+            <li><a href="#" data-link="github" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#" data-link="linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="#" data-link="instagram" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+          <p class="contato__email">E-mail: <span data-email>vitordelduca@gmail.com</span></p>
+        </div>
+
+        <form class="form" id="form-contato" novalidate>
+          <label for="c-nome">Seu nome</label>
+          <input id="c-nome" name="nome" type="text" autocomplete="name" required>
+
+          <label for="c-msg">Mensagem</label>
+          <textarea id="c-msg" name="mensagem" rows="5" required></textarea>
+
+          <button class="botao botao--amarelo" type="submit">Escrever no meu e-mail</button>
+          <p class="form__status" id="status-contato" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__linha">
+      <p>© <span id="ano">2026</span> <span data-nome>Vitor</span></p>
+      <p>Feito com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
